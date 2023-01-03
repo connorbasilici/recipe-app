@@ -12,7 +12,7 @@ label {
 header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   font-family: 'Playfair Display SC';
-  font-size: 64px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -29,6 +29,7 @@ thead th, tfoot th {
 th {
   letter-spacing: 2px;
   padding: 10px;
+  flex: 1;
 }
 
 td {
@@ -61,14 +62,21 @@ tbody tr:nth-child(odd) {
   text-overflow: ellipsis;
 }
 
-/* header and columns */
+tbody td input {
+  
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+}
+
+/* header column spacing */
 
 thead th:nth-child(n+4):nth-child(-n+5) {
   width: 30%;
 }
 
-thead th:nth-child(n+1):nth-child(-n+3) {
-  width: 10%
+thead th:nth-child(n+1):nth-child(-n+3):nth-child(6) {
+  width: 10%;
 }
 
 /* images */

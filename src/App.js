@@ -48,29 +48,29 @@ function App() {
     currentRecipes.filter((recipe, index) => index !== indexToDelete)
   );
 
-return (
-  <div className="App">
-    <header><h1>Delicious Food Recipes</h1></header>
-    <form name="create" onSubmit={handleSubmit}>
-    <table>
-      <thead>
-        <tr>
-          <th name="name">Name</th>
-          <th name="cuisine">Cuisine</th>
-          <th name="photo">Photo</th>
-          <th name="ingredients">Ingredients</th>
-          <th name="preparation">Preparation</th>
-          <th name="actions">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-          <RecipeList recipes={recipes} deleteRecipe={deleteRecipe} />
-          <RecipeCreate handleChange={handleChange} />
-      </tbody>
-    </table>
-    </form>
-  </div>
-);
+  return (
+    <div className="App">
+      <header><h1>Delicious Food Recipes</h1></header>
+      <form name="create" onSubmit={handleSubmit}>
+        <table>
+          <thead>
+            <tr>
+              <th name="name">Name</th>
+              <th name="cuisine">Cuisine</th>
+              <th name="photo">Photo</th>
+              <th name="ingredients">Ingredients</th>
+              <th name="preparation">Preparation</th>
+              <th name="actions">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+              <RecipeList recipes={recipes} deleteRecipe={deleteRecipe} />
+              <RecipeCreate handleChange={handleChange} />
+          </tbody>
+        </table>
+      </form>
+    </div>
+  );
 }
 
 export default App;
