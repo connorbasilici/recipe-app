@@ -29,7 +29,8 @@ thead th, tfoot th {
 th {
   letter-spacing: 2px;
   padding: 10px;
-  flex: 1;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 td {
